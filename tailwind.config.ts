@@ -9,9 +9,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "dark-orange": "#EBA82C",
       },
+      fontFamily: {
+        "source":  '"Source Sans 3", "serif"',
+      },
+      fontSize: {
+        "customSm": "21px",
+        "customMd": "76px",
+      }
+
     },
   },
   plugins: [],
