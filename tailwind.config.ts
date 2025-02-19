@@ -13,6 +13,7 @@ export default {
         "red": "#FF132D",
         "light-black": "#1D1D1B",
         "light-grey": "#F5F5F5",
+        "light-orange": "#FEBE32"
       },
       fontFamily: {
         "source":  '"Source Sans 3", "sans-serif"',

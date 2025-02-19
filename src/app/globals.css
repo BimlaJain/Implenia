@@ -3,10 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-    font-family:"Source" ;
-    src: url("/public/assets/fonts/SourceSansPro-Regular.ttf");
+html , body{
+    scroll-behavior: smooth;
 }
-.font-source{
-    font-family: 'Source Sans Pro' , sans-serif;
-} */

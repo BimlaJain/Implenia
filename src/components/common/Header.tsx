@@ -19,7 +19,7 @@ const Header = () => {
             <div className="container max-w-[1160px] mx-auto  max-xl:px-[16px] flex items-center justify-between md:py-[18.5px] py-[5px]">
                 <a href="/">
                     <img
-                        src="./assets/images/png/logo.png"
+                        src="./assets/images/webp/logo.webp"
                         alt="logo"
                         className="lg:size-[93px] md:size-[64px] size-10 pointer-events-none"
                     />

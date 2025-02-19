@@ -18,7 +18,7 @@ const Works = () => {
                     ) : (
                         <img
                             className='md:rounded-[25px] rounded-xl cursor-pointer'
-                            src="/assets/images/png/works-image.png"
+                            src="/assets/images/webp/works-image.webp"
                             alt="work"
                             onClick={handleImageClick}
                         />
