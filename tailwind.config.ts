@@ -12,7 +12,7 @@ export default {
         "dark-orange": "#EBA82C",
       },
       fontFamily: {
-        "source":  '"Source Sans 3", "serif"',
+        "source":  '"Source Sans 3", "sans-serif"',
       },
       fontSize: {
         "customSm": "21px",
