@@ -15,7 +15,7 @@ const Hero = () => {
                         FOR YOUR IDEA
                     </h1>
                 </div>
-                <CustomButton text="Bring your idea to life!" myClass="!mt-[25px] md:!mb-[120px] !mb-[100px] !ml-[52px] max-xl:!flex max-xl:!mx-auto  hover:!scale-105" />
+                <CustomButton text="Bring your idea to life!" myClass="!mt-[25px] md:!mb-[120px] !mb-[100px] !ml-[52px] max-xl:!flex max-xl:!mx-auto  hover:!text-black hover:!bg-white" />
             </div>
         </div>
     )

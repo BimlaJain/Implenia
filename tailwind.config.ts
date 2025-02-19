@@ -10,13 +10,18 @@ export default {
     extend: {
       colors: {
         "dark-orange": "#EBA82C",
+        "red": "#FF132D",
+        "light-black": "#1D1D1B",
+        "light-grey": "#F5F5F5",
       },
       fontFamily: {
         "source":  '"Source Sans 3", "sans-serif"',
       },
       fontSize: {
         "customSm": "21px",
+        "customXsm": "49px",
         "customMd": "76px",
+        "customLg": "80px",
       }
 
     },
