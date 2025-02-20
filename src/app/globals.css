@@ -6,3 +6,10 @@
 html , body{
     scroll-behavior: smooth;
 }
+
+@media (max-width: 639.98px) {
+    .hero-bg-image{
+        background-position:  right -100px center;
+    }
+    
+}
