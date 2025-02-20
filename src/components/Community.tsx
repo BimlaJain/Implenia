@@ -23,7 +23,7 @@ const Community = () => {
                       {SLIDER_DATA.map((testimonial, index) => (
                           <SwiperSlide key={index} className="flex flex-col items-center">
                               <span className="text-light-orange md:text-customXl text-customMd">&ldquo;</span>
-                              <p className="md:text-customXmd text-2xl font-medium text-black -mt-12 max-w-[788px] text-center mx-auto ">
+                              <p className="md:text-customXmd text-2xl font-medium text-black leading-customXmd -mt-12 max-w-[788px] text-center mx-auto ">
                                   {testimonial.description}
                               </p>
                               <div className="flex items-center mt-10 md:ml-[236px] ml-10 ">
@@ -35,8 +35,8 @@ const Community = () => {
                                       className="rounded-full max-sm:size-16"
                                   />
                                   <div className="ml-4 text-left">
-                                      <p className="text-dark-grey md:text-customSm text-base">{testimonial.role}</p>
-                                      <p className="font-semibold text-black md:text-customSm text-base">{testimonial.name}</p>
+                                      <p className="text-dark-grey md:text-customSm text-base leading-customSm">{testimonial.role}</p>
+                                      <p className="font-semibold text-black md:text-customSm text-base leading-customSm">{testimonial.name}</p>
                                   </div>
                               </div>
                           </SwiperSlide>
