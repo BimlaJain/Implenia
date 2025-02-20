@@ -6,7 +6,7 @@ interface headingProps {
 const CommonHeading = ({ myClass, text }: headingProps) => {
     return (
         <h2
-            className={`${myClass} text-black font-bold md:text-customXsm text-4xl`}
+            className={`${myClass} text-light-black font-bold lg:text-customXsm text-3xl tracking-customMd leading-customXmd`}
         >
             {text}
         </h2>

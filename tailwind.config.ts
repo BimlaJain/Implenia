@@ -21,12 +21,26 @@ export default {
       },
       fontSize: {
         "customSm": "21px",
+        "customXxsm": "40px",
         "customXsm": "49px",
         "customXmd": "32px",
         "customMd": "76px",
         "customLg": "80px",
         "customXl": "100px",
-      }
+      },
+      lineHeight: {
+        "customSm": "100%",
+        "customMd": "105%",
+        "customXmd": "125%",
+      },
+      letterSpacing: {
+        "customXmd": "0.28px",
+        "customSm": "0.35px",
+        "customMd": "0.66px"
+      },
+      backgroundImage: {
+        "hero-bg-image": "url('/assets/images/webp/hero-bg.webp')",
+      },
 
     },
   },

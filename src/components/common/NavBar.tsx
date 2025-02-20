@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { HEADER_LIST } from "../../utils/helper";
 import Link from "next/link"
-import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 interface HeaderItem {
     title: string;
@@ -11,8 +11,10 @@ interface HeaderItem {
 
 const Header = () => {
     const [open, setOpen] = useState<boolean>(false);
-    const pathname = usePathname();
-    
+    const [Active, setActive] = useState<number | null>(null);
+    function clickHandler(i: number) {
+        setActive(i);
+    }
     useEffect(() => {
         document.body.style.overflow = open ? "hidden" : "auto";
     }, [open]);
@@ -21,18 +23,21 @@ const Header = () => {
         <div id="navbar" className="bg-white z-40 fixed top-0 left-0 w-full ">
             <div className="container max-w-[1177px] mx-auto  max-xl:px-[16px] flex items-center justify-between md:py-[18.5px] py-[5px]">
                 <Link href="/">
-                    <img
-                        src="./assets/images/webp/logo.webp"
+                    <Image
+                        width={93}
+                        height={93}
+                        src="/assets/images/webp/logo.webp"
                         alt="logo"
-                        className="lg:size-[93px] md:size-[64px] size-10 pointer-events-none"
+                        className=" max-lg:size-[64px] max-sm:size-14 pointer-events-none"
                     />
                 </Link>
                 <ul className="flex items-center gap-[38px] max-md:hidden">
                     {HEADER_LIST.map((item: HeaderItem, i: number) => (
                         <li key={i}>
-                            <Link
+                            <Link onClick={() => clickHandler(i)}
                                 href={item.link}
-                                className={`font-bold font-source text-black text-base hover:text-dark-orange transition-all duration-300 ${pathname === item.link ? "text-dark-orange" : ""}`}
+                                className={`font-bold font-source text-black text-base hover:text-dark-orange transition-all duration-300 ${Active === i ? "text-dark-orange" : ""
+                                    }`}
                             >
                                 {item.title}
                             </Link>

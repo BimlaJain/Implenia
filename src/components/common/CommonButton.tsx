@@ -11,7 +11,7 @@ const CommonButton: React.FC<CommonButtonProps> = ({ text, myClass = "", customO
     return (
         <button
             onClick={customOnClick}
-            className={`text-customSm  font-bold lg:py-[16.9px] lg:px-[52.4px] py-2 md:px-8  px-6 border border-white rounded-[47px] text-white transition-all duration-500  ${myClass}
+            className={`text-customSm leading-customSm font-bold lg:py-[22px] lg:px-[52.4px] py-[10px] md:px-8  px-6 border border-white rounded-[47px] text-white transition-all duration-500  ${myClass}
 `}
         >
             {text}
