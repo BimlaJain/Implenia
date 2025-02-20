@@ -1,8 +1,9 @@
 import React , {useState} from 'react';
-import CustomButton from './common/CommonButton';
+import CommonButton from './common/CommonButton';
 import { STATS } from '../utils/helper'
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import CommonHeading from './common/CommonHeading';
 
 
 const KickBox = () => {
@@ -14,7 +15,7 @@ const KickBox = () => {
     return (
         <div id='stories' className='lg:pt-[134px] lg:pb-[128px] md:py-20 py-12'>
             <div className="container max-w-[1140px] mx-auto px-4">
-                <h2 className='text-black font-bold md:text-customXsm text-4xl'>IMPLENIA KICKBOX</h2>
+                <CommonHeading text=' IMPLENIA KICKBOX' />
                 <p className='max-w-[1090px] text-left font-light md:text-customSm text-base leading-[27px] lg:pt-4 pt-2 text-light-black'>
                     Since 2019, our Kickbox Intrapreneurship Program has been inspiring employees across all divisions to turn their ideas into impactful solutions. From validating ideas (RedBox) to piloting projects (BlueBox) and driving implementation (GoldBox), Kickbox provides the tools and support to shape the future of Implenia. Become an intrapreneur yourself and bring your idea to life!
                 </p>
@@ -51,7 +52,7 @@ const KickBox = () => {
                             </div>
                         ))}
                     </div>
-                    <CustomButton
+                    <CommonButton
                         text="Submit Your idea!"
                         myClass="!text-red max-lg:!mx-auto !flex border-2 md:!px-[50px] md:!py-[10.4px] px-[43.6px] py-[7px] !border-red hover:!bg-red hover:!text-white"
                     />

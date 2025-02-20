@@ -3,13 +3,53 @@
 @tailwind components;
 @tailwind utilities;
 
-html , body{
+html,
+body {
     scroll-behavior: smooth;
 }
 
-@media (max-width: 639.98px) {
-    .hero-bg-image{
-        background-position:  right -100px center;
+.swiper-button-prev,
+.swiper-button-next {
+    color: black !important;
+}
+
+.swiper-button-next:after {
+    position: relative !important;
+    top: 220% !important;
+}
+
+@media (max-width: 998.98px) {
+    .swiper-button-prev:after {
+        position: relative !important;
+        bottom: 280% !important;
+        font-size: 35px !important;
     }
-    
+
+    .swiper-button-next:after {
+        font-size: 35px !important;
+    }
+
+}
+
+@media (max-width: 639.98px) {
+    .hero-bg-image {
+        background-position: right -100px center;
+    }
+
+    .swiper-button-prev:after {
+        bottom: 250% !important;
+        font-size: 25px !important;
+    }
+
+    .swiper-button-next:after {
+        font-size: 25px !important;
+    }
+
+}
+
+@media (max-width: 500.98px) {
+    .swiper-button-prev:after {
+        bottom: 340% !important;  
+    }
+
 }

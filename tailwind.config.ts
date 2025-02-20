@@ -13,7 +13,8 @@ export default {
         "red": "#FF132D",
         "light-black": "#1D1D1B",
         "light-grey": "#F5F5F5",
-        "light-orange": "#FEBE32"
+        "light-orange": "#FEBE32",
+        "dark-grey": "#8F9090"
       },
       fontFamily: {
         "source":  '"Source Sans 3", "sans-serif"',
@@ -21,8 +22,10 @@ export default {
       fontSize: {
         "customSm": "21px",
         "customXsm": "49px",
+        "customXmd": "32px",
         "customMd": "76px",
         "customLg": "80px",
+        "customXl": "100px",
       }
 
     },

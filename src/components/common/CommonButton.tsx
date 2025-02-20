@@ -1,13 +1,13 @@
 import React from "react";
 
-interface CustomButtonProps {
+interface CommonButtonProps {
     text: string;
     myClass?: string;
     customOnClick?: () => void;
 
 }
 
-const CustomButton: React.FC<CustomButtonProps> = ({ text, myClass = "", customOnClick, }) => {
+const CommonButton: React.FC<CommonButtonProps> = ({ text, myClass = "", customOnClick, }) => {
     return (
         <button
             onClick={customOnClick}
@@ -19,4 +19,4 @@ const CustomButton: React.FC<CustomButtonProps> = ({ text, myClass = "", customO
     );
 };
 
-export default CustomButton;
+export default CommonButton;

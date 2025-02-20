@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import CommonHeading from './common/CommonHeading';
 
 const Works = () => {
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -11,8 +12,8 @@ const Works = () => {
     return (
         <div className='bg-light-grey lg:pt-[128px] lg:pb-[134px] md:py-20 py-12'>
             <div className="container max-w-[1140px] mx-auto px-4">
-                <h2 className='text-black md:text-customXsm text-4xl font-bold lg:pb-[64px] md:pb-10 pb-5'>HOW IT WORKS</h2>
-                <div className="relative max-w-[1064px] xl:h-[580px] lg:h-[540px] md:h-[400px] sm:h-[255px] h-[186px] md:rounded-[25px] rounded-xl overflow-hidden">
+                <CommonHeading text='HOW IT WORKS' myClass='lg:!pb-[64px] md:!pb-10 !pb-5'/>
+                <div className="relative max-w-[1064px] xl:h-[580px] lg:h-[540px] md:h-[400px] sm:h-[255px] h-[186px] md:rounded-[25px] rounded-xl overflow-hidden md:ml-[27px] ml-4">
                     {isVideoPlaying ? (
                         <iframe className='w-full h-full' src="https://www.youtube.com/embed/pX0jXyuj7QE?autoplay=1" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
                     ) : (

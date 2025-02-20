@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { HEADER_LIST } from "../../utils/helper";
+import Link from "next/link"
+import { usePathname } from "next/navigation";
 
 interface HeaderItem {
     title: string;
@@ -9,6 +11,7 @@ interface HeaderItem {
 
 const Header = () => {
     const [open, setOpen] = useState<boolean>(false);
+    const pathname = usePathname();
     
     useEffect(() => {
         document.body.style.overflow = open ? "hidden" : "auto";
@@ -16,23 +19,23 @@ const Header = () => {
 
     return (
         <div id="navbar" className="bg-white z-40 fixed top-0 left-0 w-full ">
-            <div className="container max-w-[1160px] mx-auto  max-xl:px-[16px] flex items-center justify-between md:py-[18.5px] py-[5px]">
-                <a href="/">
+            <div className="container max-w-[1177px] mx-auto  max-xl:px-[16px] flex items-center justify-between md:py-[18.5px] py-[5px]">
+                <Link href="/">
                     <img
                         src="./assets/images/webp/logo.webp"
                         alt="logo"
                         className="lg:size-[93px] md:size-[64px] size-10 pointer-events-none"
                     />
-                </a>
+                </Link>
                 <ul className="flex items-center gap-[38px] max-md:hidden">
                     {HEADER_LIST.map((item: HeaderItem, i: number) => (
                         <li key={i}>
-                            <a
+                            <Link
                                 href={item.link}
-                                className="font-bold font-source pb-[3px] text-black text-base hover:text-dark-orange transition-all duration-300"
+                                className={`font-bold font-source text-black text-base hover:text-dark-orange transition-all duration-300 ${pathname === item.link ? "text-dark-orange" : ""}`}
                             >
                                 {item.title}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

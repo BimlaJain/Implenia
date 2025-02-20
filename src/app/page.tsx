@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'
 import Hero from '@/components/Hero'
 import KickBox from '@/components/KickBox'
 import Works from '@/components/HowItWorks'
+import Community from '@/components/Community'
 
 const page = () => {
   useEffect(() => {
@@ -16,7 +17,8 @@ const page = () => {
     <div>
       <Hero />
       <KickBox />
-      <Works/>
+      <Works />
+      <Community/>
     </div>
   )
 }
