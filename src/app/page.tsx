@@ -9,6 +9,7 @@ import Community from '@/components/Community'
 import Intrapreneurship from '@/components/Intrapreneurship'
 import KickboxProcess from '@/components/KickBoxProcess'
 import Faq from '@/components/Faq'
+import Footer from '@/components/Footer'
 
 const page = () => {
   useEffect(() => {
@@ -24,7 +25,8 @@ const page = () => {
       <KickboxProcess/>
       <Community />
       <Intrapreneurship />
-      <Faq/>
+      <Faq />
+      <Footer/>
     </div>
   )
 }
