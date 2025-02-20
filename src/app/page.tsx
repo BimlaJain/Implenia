@@ -8,6 +8,7 @@ import Works from '@/components/HowItWorks'
 import Community from '@/components/Community'
 import Intrapreneurship from '@/components/Intrapreneurship'
 import KickboxProcess from '@/components/KickBoxProcess'
+import Faq from '@/components/Faq'
 
 const page = () => {
   useEffect(() => {
@@ -22,7 +23,8 @@ const page = () => {
       <Works />
       <KickboxProcess/>
       <Community />
-      <Intrapreneurship/>
+      <Intrapreneurship />
+      <Faq/>
     </div>
   )
 }
