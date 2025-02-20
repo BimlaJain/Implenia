@@ -6,6 +6,8 @@ import Hero from '@/components/Hero'
 import KickBox from '@/components/KickBox'
 import Works from '@/components/HowItWorks'
 import Community from '@/components/Community'
+import Intrapreneurship from '@/components/Intrapreneurship'
+import KickboxProcess from '@/components/KickBoxProcess'
 
 const page = () => {
   useEffect(() => {
@@ -18,7 +20,9 @@ const page = () => {
       <Hero />
       <KickBox />
       <Works />
-      <Community/>
+      <KickboxProcess/>
+      <Community />
+      <Intrapreneurship/>
     </div>
   )
 }
