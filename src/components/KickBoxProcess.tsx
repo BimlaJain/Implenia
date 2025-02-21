@@ -57,7 +57,7 @@ const KickboxProcess = () => {
                     ))}
                 </div>
                 <CommonButton
-                    myClass="!border-red !text-red hover:bg-red hover:!text-white !px-[45.9px] !py-[16.9px] mt-[39px] max-sm:mt-7  !flex lg:ml-7"
+                    myClass="!border-red !text-red hover:bg-red hover:!text-white md:!px-[45.9px] md:!py-[16.9px] mt-[39px] max-sm:mt-7  !flex lg:ml-7"
                     text="Start your RedBox!"
                 />
             </div>
