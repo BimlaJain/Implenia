@@ -24,8 +24,8 @@ const Footer = () => {
                   </div>
 
                   <div>
-                      <h3 className="font-bold">Sitemap</h3>
-                  <ul className="mt-2 space-y-1 text-base">
+                      <h3 className="font-[900]">Sitemap</h3>
+                  <ul className="mt-2 text-base">
                       {FOOTER_LIST.map((item) => (
                           <li key={item.link} id={item.link}>
                               <Link href={item.link}> {item.label}</Link>

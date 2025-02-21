@@ -18,7 +18,7 @@ const Faq: React.FC = () => {
         <div className=" lg:pb-[146px] lg:pt-[128px] md:py-20 py-12 bg-light-grey">
             <div className="container max-w-[1140px] mx-auto px-4">
                 <CommonHeading text="FAQs" />
-                <div className="pt-5 max-w-[1080px] mx-auto">
+                <div className="pt-5 max-w-[1080px]">
                     {ACCORDION_DATA.map((item: AccordionItem, index: number) => (
                         <div
                             key={index}

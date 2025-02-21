@@ -20,7 +20,7 @@ const KickboxProcess = () => {
             <div className="max-w-[1172px] mx-auto px-4">
                 <CommonHeading text="KICKBOX PROCESS" myClass="pb-[17px]" />
                 <p className="max-w-[1090px] text-left font-light -tracking-customXmd md:text-customSm text-base leading-customXmd lg:pt-4 pt-2 text-light-black">The Kickbox program at Implenia guides participants through three key phases to turn their ideas into impactful solutions: 1. RedBox for validation, 2. BlueBox for piloting, and 3. GoldBox for implementation. To progress through each phase, you’ll work to continuously optimize your idea and demonstrate its potential to internal Implenia sponsors.</p>
-                <div className="flex items-center lg:gap-[51px] lg:pt-16 max-lg:flex-wrap -mx-3 xl:justify-center">
+                <div className="flex items-center xl:gap-[51px] lg:gap-2 lg:pt-16 max-lg:flex-wrap -mx-3 xl:justify-center">
                     {KICKBOX_PROCESS_LIST.map((obj: KickboxProcessItem, i: number) => (
                         <div
                             key={i}

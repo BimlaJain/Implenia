@@ -46,7 +46,7 @@ const KickBox = () => {
                                         duration={3}
                                     />
                                 </h3>
-                                <p className="font-bold text-customSm leading-customSm max-lg:text-xl max-md:text-lg max-sm:text-xs text-center">
+                                <p className="font-bold text-customSm leading-customSm max-lg:text-xl max-md:text-lg max-sm:text-xs text-center -mt-4">
                                     {item.label}
                                 </p>
                             </div>
