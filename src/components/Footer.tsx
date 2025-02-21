@@ -10,12 +10,12 @@ const Footer = () => {
               <div className="container max-w-[1140px] px-4 mx-auto grid md:grid-cols-3 gap-10">
                   <div>
                       <h3 className="font-[900] text-base">Implenia Innovation Hub</h3>
-                      <p className="mt-2">Thurgauerstrasse 101A</p>
+                      <p>Thurgauerstrasse 101A</p>
                       <p>8152 Glattpark (Opfikon)</p>
                       <p>innovation@implenia.com</p>
 
                       <h3 className="font-bold mt-9">Implenia Kickbox</h3>
-                      <p className="mt-2">
+                      <p>
                           This revised version is based on Adobe Kickbox which is licensed under
                           the Creative Commons Attribution License.
                       </p>
@@ -47,7 +47,7 @@ const Footer = () => {
                               placeholder="Ihre Nachricht..."
                           className="max-w-[273px] w-full p-2 bg-white text-black h-[121px] placeholder:text-black"
                           />
-                      <CommonButton text='SENDEN' myClass='!bg-red !text-white !flex md:!ml-auto !px-[22px] !py-[6px] !rounded-none hover:!text-red hover:!bg-white !text-sm border border-red'/>
+                      <CommonButton text='SENDEN' myClass='!bg-red !text-white !flex md:!ml-auto !px-[22px] !py-[6px] !rounded-none hover:!text-red hover:!bg-white !text-sm border !border-red'/>
                       </form>
                   </div>
               <p className=" mt-1 text-sm whitespace-nowrap">
