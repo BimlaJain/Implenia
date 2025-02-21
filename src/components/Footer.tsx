@@ -1,9 +1,13 @@
 import React from 'react'
+import CommonButton from './common/CommonButton';
+import { FOOTER_LIST } from '@/utils/helper';
+import Link from 'next/link';
 
 const Footer = () => {
+    const year =  new Date().getFullYear();
   return (
-    <div className="bg-black text-white p-10">
-              <div className="container mx-auto grid md:grid-cols-3 gap-10">
+      <div id='contact' className="bg-black text-white lg:pt-[138px] md:pb-[66px] md:pt-20 py-12">
+              <div className="container max-w-[1140px] px-4 mx-auto grid md:grid-cols-3 gap-10">
                   <div>
                       <h3 className="font-[900] text-base">Implenia Innovation Hub</h3>
                       <p className="mt-2">Thurgauerstrasse 101A</p>
@@ -21,33 +25,33 @@ const Footer = () => {
 
                   <div>
                       <h3 className="font-bold">Sitemap</h3>
-                      <ul className="mt-2 space-y-1">
-                          <li>Home</li>
-                          <li>Projects</li>
-                          <li>Community</li>
-                          <li>Contact</li>
-                      </ul>
+                  <ul className="mt-2 space-y-1 text-base">
+                      {FOOTER_LIST.map((item) => (
+                          <li key={item.link} id={item.link}>
+                              <Link href={item.link}> {item.label}</Link>
+                              
+                          </li>
+                      ))}
+                  </ul>
                   </div>
 
                   <div>
                       <h3 className="font-bold">Contact</h3>
-                      <form className="mt-4">
+                      <form className="mt-4 max-w-[273px]">
                           <input
                               type="email"
                               placeholder="Ihre E-Mail"
-                              className="w-full p-2 bg-white text-black mb-2"
+                              className="max-w-[189px] w-full h-[50px] p-2 bg-white text-black placeholder:text-black mb-2"
                           />
                           <textarea
                               placeholder="Ihre Nachricht..."
-                              className="w-full p-2 bg-white text-black h-24"
+                          className="max-w-[273px] w-full p-2 bg-white text-black h-[121px] placeholder:text-black"
                           />
-                          <button className="bg-red text-white flex ml-auto px-6 py-2">
-                              SENDEN
-                          </button>
+                      <CommonButton text='SENDEN' myClass='!bg-red !text-white !flex md:!ml-auto !px-[22px] !py-[6px] !rounded-none hover:!text-red hover:!bg-white !text-sm border border-red'/>
                       </form>
                   </div>
-              <p className=" mt-1 text-sm">
-                  Copyright © 2024 Implenia. Alle Rechte vorbehalten.
+              <p className=" mt-1 text-sm whitespace-nowrap">
+                  Copyright © {year} Implenia. Alle Rechte vorbehalten.
               </p>
               </div>
 

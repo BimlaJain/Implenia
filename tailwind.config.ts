@@ -16,6 +16,7 @@ export default {
         "light-orange": "#FEBE32",
         "dark-grey": "#8F9090",
         "blue": "#009FE3",
+        "grey": "#9DA1A2",
       },
       fontFamily: {
         "source":  '"Source Sans 3", "sans-serif"',

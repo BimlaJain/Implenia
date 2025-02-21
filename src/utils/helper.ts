@@ -123,3 +123,10 @@ export const ACCORDION_DATA = [
     },
 ];
 
+export const FOOTER_LIST = [
+    { link: "#home", label: "Home" },
+    { link: "#projects", label: "Projects" },
+    { link: "#community", label: "Community" },
+    { link: "#contact", label: "Contact" },
+];
+

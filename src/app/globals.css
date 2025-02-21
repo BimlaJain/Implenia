@@ -20,7 +20,7 @@ body {
 .swiper-pagination-custom,
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal{
-    top: 93% !important;
+    top: 96% !important;
 }
 
 @media (max-width: 998.99px) {

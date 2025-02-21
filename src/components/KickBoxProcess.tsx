@@ -19,8 +19,8 @@ const KickboxProcess = () => {
         <div className="xl:pt-[129px] xl:pb-36 lg:py-28 md:py-20 py-12">
             <div className="max-w-[1172px] mx-auto px-4">
                 <CommonHeading text="KICKBOX PROCESS" myClass="pb-[17px]" />
-                <p>The Kickbox program at Implenia guides participants through three key phases to turn their ideas into impactful solutions: 1. RedBox for validation, 2. BlueBox for piloting, and 3. GoldBox for implementation. To progress through each phase, you’ll work to continuously optimize your idea and demonstrate its potential to internal Implenia sponsors."</p>
-                <div className="flex items-center lg:gap-[51px] lg:pt-12 max-lg:flex-wrap -mx-3 justify-center">
+                <p className="max-w-[1090px] text-left font-light -tracking-customXmd md:text-customSm text-base leading-customXmd lg:pt-4 pt-2 text-light-black">The Kickbox program at Implenia guides participants through three key phases to turn their ideas into impactful solutions: 1. RedBox for validation, 2. BlueBox for piloting, and 3. GoldBox for implementation. To progress through each phase, you’ll work to continuously optimize your idea and demonstrate its potential to internal Implenia sponsors.</p>
+                <div className="flex items-center lg:gap-[51px] lg:pt-16 max-lg:flex-wrap -mx-3 xl:justify-center">
                     {KICKBOX_PROCESS_LIST.map((obj: KickboxProcessItem, i: number) => (
                         <div
                             key={i}
@@ -40,24 +40,24 @@ const KickboxProcess = () => {
                                             : i === 1
                                                 ? "text-blue"
                                                 : "text-light-orange"
-                                        } font-semibold text-customSm max-sm:text-lg leading-[21px]`}
+                                        } font-semibold text-customSm max-sm:text-lg leading-customSm`}
                                 >
                                     {obj.subTitle}
                                 </p>
-                                <h4 className="font-semibold text-customXxmd max-md:text-3xl max-sm:text-2xl leading-customXmd py-2 max-sm:pt-0 max-sm:pb-1">
+                                <h4 className="font-semibold text-customXxmd max-md:text-3xl max-sm:text-2xl leading-customXmd py-2 max-sm:pt-0 max-sm:pb-1 -tracking-customMd">
                                     {obj.title}
                                 </h4>
-                                <p className="font-light text-customSm max-md:text-lg max-sm:text-base leading-customXmd text-light-black pb-7 max-sm:pb-5">
+                                <p className="font-light text-customSm max-md:text-lg max-sm:text-base -tracking-customXmd leading-customXmd text-light-black pb-7 max-sm:pb-5">
                                    {obj.description}
                                 </p>
-                                <p className="font-light text-customSm max-md:text-lg max-sm:text-base leading-customXmd text-light-black"> {obj.boxDuration} </p>
-                                <p className="font-light text-customSm max-md:text-lg max-sm:text-base leading-customXmd text-light-black"> {obj.budget} </p>
+                                <p className="font-light text-customSm max-md:text-lg max-sm:text-base -tracking-customXmd leading-customXmd text-light-black"> {obj.boxDuration} </p>
+                                <p className="font-light text-customSm max-md:text-lg max-sm:text-base -tracking-customXmd leading-customXmd text-light-black"> {obj.budget} </p>
                             </div>
                         </div>
                     ))}
                 </div>
                 <CommonButton
-                    myClass="!border-red !text-red hover:bg-red hover:!text-white px-[44.9px] py-[15.5px] mt-[39px] max-sm:mt-7 max-lg:!mx-auto !flex lg:ml-7"
+                    myClass="!border-red !text-red hover:bg-red hover:!text-white !px-[45.9px] !py-[16.9px] mt-[39px] max-sm:mt-7  !flex lg:ml-7"
                     text="Start your RedBox!"
                 />
             </div>

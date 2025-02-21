@@ -54,7 +54,7 @@ const KickBox = () => {
                     </div>
                     <CommonButton
                         text="Submit Your idea!"
-                        myClass="!text-red  border-2 md:!px-[50px] sm:py-[15.9px] px-[43.6px]  !border-red hover:!bg-red hover:!text-white"
+                        myClass="!text-red  border-2 md:!px-[50px] sm:!py-[15.9px] px-[43.6px]  !border-red hover:!bg-red hover:!text-white"
                     />
                 </div>
             </div>

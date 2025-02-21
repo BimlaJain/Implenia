@@ -1,50 +1,39 @@
-import React from 'react'
-import CommonHeading from './common/CommonHeading'
+import React from 'react';
+import CommonHeading from './common/CommonHeading';
 import CommonButton from './common/CommonButton';
-import { STORIES_LIST } from '@/utils/helper';
-import Image, { StaticImageData } from 'next/image';
+import {  STORIES_LIST } from '@/utils/helper';
+import Image from 'next/image';
 
-interface StoriesData {
+interface StoryData {
     image: string;
     imageAlt: string;
     title: string;
 }
 
-const Intrapreneurship = () => {
+const Stories: React.FC = () => {
     return (
-        <div id="stories" className="xl:pt-32 xl:pb-36 lg:py-28 md:py-20 py-12">
-            <div className="container max-w-[1172px] mx-auto px-4">
-                <CommonHeading text="INTRAPRENEURSHIP STORIES" />
-                <div className='max-w-[1103px] mx-auto'>
-                    <div className="flex -mx-[25.5px] max-lg:-mx-3 max-md:flex-wrap justify-center">
-                        {STORIES_LIST.map((obj:StoriesData ,  i:number) => (
-                            <div
-                                key={i}
-                                className="w-1/3 max-md:w-1/2 max-sm:w-full xl:px-[25.5px] px-3  pt-[25px]"
-                            >
-                                <div className="border border-black rounded-[28px] h-full overflow-hidden">
-                                    <Image
-                                        src={obj.image}
-                                        alt={obj.imageAlt}
-                                        width={323}
-                                        height={207}
-                                        className="w-full max-sm:h-[180px] object-cover rounded-[28px] pointer-events-none"
-                                    />
-                                    <p className="font-semibold text-[35px] max-lg:text-3xl max-sm:text-2xl leading-[44px] pt-[51px] pb-16 px-6">
-                                        {obj.title}
-                                    </p>
-                                </div>
+        <div>
+            <div className='lg:pt-[128px] lg:pb-[144px] md:py-20 py-12'>
+                <div className="container max-w-[1140px] mx-auto px-4">
+                    <CommonHeading text="INTRAPRENEURSHIP STORIES" />
+                    <div className="flex flex-wrap xl:gap-10 gap-6  pt-[25px] pb-[39px] max-sm:justify-center">
+                        {STORIES_LIST.map((story: StoryData, index: number) => (
+                            <div key={index} className='border border-black rounded-[28px] xl:max-w-[323px] md:max-w-[308px] max-w-[278px]'>
+                                <Image className='pointer-events-none' src={story.image} alt={story.imageAlt} width={323} height={207} />
+                                <h4 className='font-semibold md:text-custom-xmd text-3xl md:leading-custom-xsm leading-8 md:pl-[26px] pl-4 md:pt-[51px] pt-8 md:pb-[61px] pb-10'>
+                                    {story.title}
+                                </h4>
                             </div>
                         ))}
                     </div>
+                    <CommonButton
+                        myClass="!border-red !border-2 !text-red hover:!bg-red hover:!text-white sm:!px-[74.18px] sm:!py-[15.5px] px-[59.6px] !mt-[39px] max-sm:mt-7 max-md:!mx-auto !flex"
+                        text="More Stories"
+                    />
                 </div>
-                <CommonButton
-                    myClass="!border-red !border-2 !text-red hover:!bg-red hover:!text-white sm:!px-[74.18px] sm:!py-[15.5px] px-[59.6px] !mt-[39px] max-sm:mt-7 max-md:!mx-auto !flex lg:!ml-12"
-                    text="More Stories"
-                />
             </div>
         </div>
     );
-}
+};
 
-export default Intrapreneurship
+export default Stories;

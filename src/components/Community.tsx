@@ -15,7 +15,7 @@ const Community = () => {
       <div id='community' className='xl:py-[130px] lg:py-28 md:py-20 py-12 bg-light-grey'>
           <div className="container max-w-[1140px] mx-auto px-4">
               <CommonHeading text='WHAT OUR COMMUNITY SAYS' />
-              <div className="flex flex-col items-center justify-center xl:pt-[140px] lg:pt-24 md:pt-16 pt-0">
+              <div className="flex flex-col items-center justify-center xl:pt-[100px] lg:pt-24 md:pt-16 pt-0">
                   <Swiper
                       navigation
                       pagination={{ clickable: true }} 
@@ -34,7 +34,7 @@ const Community = () => {
                       }}
                   >
                       {SLIDER_DATA.map((testimonial, index) => (
-                          <SwiperSlide key={index} className="flex flex-col items-center max-lg:pb-9">
+                          <SwiperSlide key={index} className="flex flex-col items-center  max-lg:pb-9">
                               <span className="text-light-orange md:text-customXl text-customMd">&ldquo;</span>
                               <p className="md:text-customXmd text-2xl font-medium text-black leading-customXmd -mt-12 max-w-[788px] text-center mx-auto ">
                                   {testimonial.description}
@@ -48,22 +48,22 @@ const Community = () => {
                                       className="rounded-full max-sm:size-16"
                                   />
                                   <div className="ml-4 text-left">
-                                      <p className="text-dark-grey md:text-customSm text-base leading-customSm">
+                                      <p className="text-dark-grey md:text-customSm text-base leading-customSm -tracking-customMd">
                                           {testimonial.role}
                                       </p>
-                                      <p className="font-semibold text-black md:text-customSm text-base leading-customSm">
+                                      <p className="font-semibold text-black md:text-customSm text-base leading-customSm -tracking-customMd">
                                           {testimonial.name}
                                       </p>
                                   </div>
                               </div>
+                              <CommonButton
+                                  text=" Join the community!"
+                                  myClass="!text-red !mx-auto !flex border-2 md:!px-[36px] md:!py-[15.9px] px-[29.5px] md:!mt-[57px] !border-red hover:!bg-red hover:!text-white"
+                              />
                           </SwiperSlide>
                       ))}
                   </Swiper>
 
-                  <CommonButton
-                      text=" Join the community!"
-                      myClass="!text-red max-lg:!mx-auto !flex border-2 md:!px-[36px] md:!py-[10.4px] px-[29.5px] md:!mt-[57px] !border-red hover:!bg-red hover:!text-white"
-                  />
               </div>
           </div>
       
