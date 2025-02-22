@@ -18,8 +18,8 @@ const Stories: React.FC = () => {
                     <div className="flex flex-wrap xl:gap-10 gap-6  pt-[25px] pb-[44px] max-sm:justify-center">
                         {STORIES_LIST.map((story: StoryData, index: number) => (
                             <div key={index} className='border border-black rounded-[28px] xl:max-w-[323px] md:max-w-[308px] max-w-[278px]'>
-                                <Image className='pointer-events-none' src={story.image} alt={story.imageAlt} width={323} height={207} />
-                                <h4 className='font-semibold md:text-customXxmd text-3xl md:leading-custom-xsm leading-8 md:pl-[26px] pl-4 md:pt-[51px] pt-8 md:pb-[61px] pb-10'>
+                                <Image className='pointer-events-none object-cover w-[323px] h-[207px]' src={story.image} alt={story.imageAlt} width={323} height={207} />
+                                <h4 className='font-semibold md:text-customXxmd text-3xl md:leading-custom-xsm leading-8 md:pl-[26px] pl-4 pr-3 md:pt-[51px] pt-8 md:pb-[61px] pb-10'>
                                     {story.title}
                                 </h4>
                             </div>

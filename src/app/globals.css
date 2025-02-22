@@ -22,6 +22,10 @@ body {
 .swiper-pagination-bullets.swiper-pagination-horizontal{
     top: 96% !important;
 }
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    font-size: 36px !important;
+}
 
 @media (max-width: 998.99px) {
     .swiper-button-next:after{

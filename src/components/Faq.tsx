@@ -8,12 +8,11 @@ interface AccordionItem {
     description?: string;
 }
 const Faq: React.FC = () => {
-    const [openAccordion, setOpenAccordion] = useState<number | null>(null);
-    const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
-    const toggleAccordion = (index: number): void => {
-        setOpenAccordion((prevIndex) => (prevIndex === index ? null : index));
-    };
+    const [openIndex, setOpenIndex] = useState(0);
 
+    const toggleAccordion = (index: any) => {
+        setOpenIndex(openIndex === index ? false : index);
+    };
     return (
         <div className=" lg:pb-[146px] lg:pt-[128px] md:py-20 py-12 bg-light-grey">
             <div className="container max-w-[1140px] mx-auto px-4">
@@ -31,24 +30,18 @@ const Faq: React.FC = () => {
                                 {item.heading}
                                 <Image
                                     src="/assets/images/svg/faq-arrow.svg"
-                                    alt={openAccordion === index ? "Collapse" : "Expand"}
+                                    alt={openIndex === index ? "Collapse" : "Expand"}
                                     width={21}
                                     height={21}
-                                    className={`transition-transform duration-500 transform ${openAccordion === index ? "rotate-90" : "rotate-0"
-                                        }`}
+                                    className={`transition-transform duration-500 transform ${openIndex === index
+                                            ? "rotate-90 transition-all duration-300"
+                                            : "rotate-0 transition-all duration-300"
+                }`}
                                 />
                             </button>
                             <div
-                                ref={(el) => {
-                                    if (el) contentRefs.current[index] = el;
-                                }}
-                                className="transition-all duration-500 ease-in-out overflow-hidden"
-                                style={{
-                                    maxHeight:
-                                        openAccordion === index
-                                            ? `${contentRefs.current[index]?.scrollHeight || 0}px`
-                                            : "0",
-                                }}
+                                className={`max-md:overflow-y-auto ${openIndex === index ? "max-h-20 pb-3.5" : "max-h-0"
+                                    } transition-all duration-500 overflow-hidden`}
                             >
                                 <div>
                                     {item.description && (

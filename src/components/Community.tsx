@@ -45,7 +45,7 @@ const Community = () => {
                                       alt={testimonial.name}
                                       width={80}
                                       height={80}
-                                      className="rounded-full max-sm:size-16"
+                                      className="rounded-full max-sm:size-16 size-20"
                                   />
                                   <div className="ml-4 text-left">
                                       <p className="text-dark-grey md:text-customSm text-base leading-customSm -tracking-customMd">
@@ -58,7 +58,7 @@ const Community = () => {
                               </div>
                               <CommonButton
                                   text=" Join the community!"
-                                  myClass="!text-red !mx-auto !flex border-2 md:!px-[36px] md:!py-[15.9px] max-sm:!mt-5 px-[29.5px] md:!mt-[45px] !border-red hover:!bg-red hover:!text-white"
+                                  myClass="!text-red !mx-auto !flex border-2 md:!px-[36px] md:!py-[15.9px] max-sm:!mt-5 px-[29.5px] md:!mt-[39px] !border-red hover:!bg-red hover:!text-white"
                               />
                           </SwiperSlide>
                       ))}
